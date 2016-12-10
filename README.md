@@ -1,6 +1,6 @@
 # Cody
 
-**Cody** is a small library to embed demos for front-end developers. It has no dependencies and it's fully customizable.
+A library to embed demos for front-end developers. It has no dependencies and it's fully customizable.
 
 [**DEMO**](http://lmgonzalves.github.io/cody/)
 
@@ -68,7 +68,7 @@ The `options` should be passed to the `init` function in object notation. Here i
 |`resultTitle`            | String                  | 'Result'                                                             | Title for Result tab. |
 |`lineNumbers`            | Boolean                 | false                                                                | Choose if you want to show line numbers or not using Prism. |
 |`resultAlwaysVisible`    | Boolean or Float        | false                                                                | If true, the Result will be showed in a separate box and always visible. Define it as a float value to specify a different height (in pixels) for this box. |
-|`loading`                | String                  | '<div class="cody-loading"><div class="spinner"></div></div>'        | HTML code for the loading indicator. |
+|`loading`                | String                  | `'<div class="cody-loading"><div class="spinner"></div></div>'`      | HTML code for the loading indicator. |
 |`css`                    | Array                   | undefined                                                            | Array of String values representing links to CSS files, or code directly, that you want to inject in the Cody `iframe`. Here you need to link at least `cody-basic.css` (basic theme styles), and one of the themes available (`cody-classic.css` or `cody-ligth.css`). You also need to provide the styles for the highlight system you prefer, such as Prism. And of course, here you can provide your own styles as well, and customize it as much as you like. |
 |`js`                     | Array                   | undefined                                                            | Array of String values representing links to JS files, or code directly, that you want to inject in the Cody `iframe`. Here you may only need to provide the scripts for the highlight system. And just like styles, you can also provide your own scripts. |
 |`baseUrl`                | String                  | ''                                                                   | String to be used as base URL for all links, allowing you to use relative URLs. |
