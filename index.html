@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cody</title>
+    <link rel="stylesheet" href="css/cody.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,800">
+    <script src="js/cody.min.js"></script>
+</head>
+<body>
+
+    <!-- SVG icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="tutorial" viewBox="0 0 20 20"><path class="icon-path" d="m2.5 4c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5h15c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-15zm2 3c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5h11c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-11zm-2 3c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5h15c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-15zm2 3c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5h11c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-11zm-2 3c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5h15c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-15z"></path></symbol>
+        <symbol id="repo" viewBox="0 0 40.723751 39.718582"><path class="icon-path" transform="matrix(1.25 0 0 -1.25 -297.64 426.86)" d="m254.4 341.49c-8.995 0-16.288-7.293-16.288-16.29 0-7.197 4.667-13.302 11.14-15.457 0.815-0.149 1.112 0.354 1.112 0.786 0 0.386-0.014 1.411-0.022 2.77-4.531-0.984-5.487 2.184-5.487 2.184-0.741 1.882-1.809 2.383-1.809 2.383-1.479 1.01 0.112 0.99 0.112 0.99 1.635-0.115 2.495-1.679 2.495-1.679 1.453-2.489 3.813-1.77 4.741-1.353 0.148 1.052 0.568 1.77 1.034 2.177-3.617 0.411-7.42 1.809-7.42 8.051 0 1.778 0.635 3.232 1.677 4.371-0.168 0.412-0.727 2.068 0.159 4.311 0 0 1.368 0.438 4.48-1.67 1.299 0.362 2.693 0.542 4.078 0.548 1.383-0.006 2.777-0.186 4.078-0.548 3.11 2.108 4.475 1.67 4.475 1.67 0.889-2.243 0.33-3.899 0.162-4.311 1.044-1.139 1.675-2.593 1.675-4.371 0-6.258-3.809-7.635-7.438-8.038 0.585-0.503 1.106-1.497 1.106-3.017 0-2.177-0.02-3.934-0.02-4.468 0-0.436 0.293-0.943 1.12-0.784 6.468 2.159 11.131 8.26 11.131 15.455 0 8.997-7.294 16.29-16.291 16.29"></path></symbol>
+    </svg>
+
+    <header class="header">
+        <h1 class="header-title">Cody</h1>
+        <div class="header-icons">
+            <a target="_blank" title="Tutorial (coming soon)" class="icon-link"><svg class="icon"><use xlink:href="#tutorial"/></svg></a>
+            <a href="https://github.com/lmgonzalves/cody" target="_blank" title="Code and Documentation" class="icon-link"><svg class="icon"><use xlink:href="#repo"/></svg></a>
+        </div>
+        <p class="header-desc">A library to embed demos for front-end developers. <br> No dependencies and fully customizable!</p>
+    </header>
+
+    <section class="showcase showcase-classic">
+        <div class="cody cody-classic">
+            <code class="html" data-code="demo.html"></code>
+            <code class="css" data-assets="css/normalize.css" data-code="css/demo.css"></code>
+            <code class="js" data-assets="js/segment.min.js, js/d3-ease.v0.6.min.js" data-code="js/demo.js"></code>
+        </div>
+    </section>
+
+    <section class="showcase showcase-custom">
+        <div class="cody cody-custom">
+            <code class="html" data-code="demo.html"></code>
+            <code class="css" data-assets="css/normalize.css" data-code="css/demo.css"></code>
+            <code class="js" data-assets="js/segment.min.js, js/d3-ease.v0.6.min.js" data-code="js/demo.js"></code>
+        </div>
+    </section>
+
+    <section class="showcase showcase-nexus">
+        <div class="nexus-container">
+            <div class="cody cody-nexus">
+                <code class="html" data-code="demo.html"></code>
+                <code class="css" data-assets="css/normalize.css" data-code="css/demo.css"></code>
+                <code class="js" data-assets="js/segment.min.js, js/d3-ease.v0.6.min.js" data-code="js/demo.js"></code>
+            </div>
+        </div>
+    </section>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+#tabs {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.tab {
+  position: relative;
+  display: inline-block;
+  float: left;
+  height: 100%;
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: darken(#2482B4, 20%);
+  font-family: 'Lato', 'Lucida Grande', sans-serif;
+  font-size: 15px;
+  z-index: 1;
+  transition: 0.2s;
+
+  &:first-child {
+    border-bottom-left-radius: 2px;
+  }
+
+  &:hover {
+    background-color: darken(#2482B4, 15%);
+  }
+
+  &:focus {
+    background-color: darken(#2482B4, 10%);
+    outline: none;
+  }
+
+  &.tab-active {
+    color: rgba(255, 255, 255, 1);
+    background-color: #2482B4;
+  }
+}
