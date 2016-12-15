@@ -15,6 +15,7 @@
         str: function(a) { return typeof a === 'string' },
         und: function(a) { return typeof a === 'undefined' },
         num: function(a) { return !isNaN(parseFloat(a)) },
+        sta: function(a, b) { return a.substr(0, b.length) === b },
         end: function(a, b) { return a.substr(-b.length) === b },
         ast: function(a) { return is.str(a) && (is.end(a, '.html') || is.end(a, '.css') || is.end(a, '.js')) }
     };
@@ -191,7 +192,7 @@
                 code = el.getAttribute('data-code');
                 if (code) {
                     (function(item) {
-                        getAsync(o.baseUrl + code, function (content) {
+                        getAsync((is.sta(code, 'http') ? '' : o.baseUrl) + code, function (content) {
                             item.code = content;
                         }, asyncCountDown);
                     })(item);
@@ -270,9 +271,9 @@
             case 'html':
                 return str;
             case 'css':
-                return is.ast(str) ? '<link rel="stylesheet" href="' + baseUrl + str + '">' : '<style>' + str + '</style>';
+                return is.ast(str) ? '<link rel="stylesheet" href="' + (is.sta(str, 'http') ? '' : baseUrl) + str + '">' : '<style>' + str + '</style>';
             case 'js':
-                return is.ast(str) ? '<script src="' + baseUrl + str + '"></script>' : '<script>' + str + '</script>';
+                return is.ast(str) ? '<script src="' + (is.sta(str, 'http') ? '' : baseUrl) + str + '"></script>' : '<script>' + str + '</script>';
             default:
                 return '';
         }
