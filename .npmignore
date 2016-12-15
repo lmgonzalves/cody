@@ -1,0 +1,14 @@
+node_modules/
+.idea/
+css/
+scss/
+img/
+index.html
+demo.html
+gulpfile.js
+js/d3-ease.v0.6.min.js
+js/demo.js
+js/prism.js
+js/prism-line-numbers.min.js
+js/scripts.js
+js/segment.min.js
