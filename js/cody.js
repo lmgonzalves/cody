@@ -199,6 +199,12 @@
                 } else {
                     item.code = el.value || '';
                 }
+            } else if (o.pen && name !== 'result') {
+                (function(item) {
+                    getAsync(o.pen + '.' + name, function (content) {
+                        item.code = item.el = content;
+                    }, asyncCountDown);
+                })(item);
             } else {
                 item.code = '';
             }
@@ -286,6 +292,14 @@
             arr = item;
         } else {
             arr = is.und(item) ? [] : [item.el];
+        }
+        // Global assets
+        assets = o[lang + 'Assets'];
+        if (assets) {
+            var newArr = [];
+            pushArray(newArr, splitStr(assets));
+            pushArray(newArr, arr);
+            arr = newArr;
         }
         while (arr.length) {
             el = arr.shift();
