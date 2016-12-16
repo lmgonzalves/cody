@@ -39,6 +39,25 @@ The structure should be as follows:
 </div>
 ```
 
+**Or you can easily include a Codepen demo:**
+
+```html
+<!-- Attribute [data-pen]: The URL of the desired pen. -->
+<div class="cody" data-pen="http://codepen.io/lmgonzalves/pen/vLaXNR"></div>
+```
+
+Note that in case the pen have external dependencies, you need to include them too as follows:
+
+```html
+<!-- Attribute [data-css-assets]: External CSS dependencies. -->
+<!-- Attribute [data-js-assets]:  External JS dependencies. -->
+<div class="cody"
+     data-pen="http://codepen.io/lmgonzalves/pen/JbeQKG"
+     data-css-assets="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"
+     data-js-assets="https://cdnjs.cloudflare.com/ajax/libs/segment-js/1.0.3/segment.min.js, https://d3js.org/d3-ease.v0.6.min.js"
+></div>
+```
+
 ### 3. Initialize it in JavaScript.
 
 ```js
