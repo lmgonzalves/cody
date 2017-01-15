@@ -80,7 +80,7 @@ The `options` should be passed to the `init` function in object notation. Here i
 |`tabsVisible`            | Boolean                 | `true`                                                               | Choose if you want to show the tabs or not. |
 |`tabsSpace`              | Boolean                 | `true`                                                               | If `true`, the space for tabs will be reserved. Set it to `false` if you want to set the tabs to `position: absolute` or something like that. |
 |`tabs`                   | String                  | `'html, css, js, result'`                                            | Tabs you want to show separated by comma. |
-|`selected`               | String                  | `'result'`                                                           | Tab that will be selected initially. |
+|`selected`               | String                  | `'result'`                                                           | Tab that will be selected initially. If `resultAlwaysVisible` is `true`, then it will be the first tab by default. |
 |`htmlTitle`              | String                  | `'HTML'`                                                             | Title for HTML tab. |
 |`cssTitle`               | String                  | `'CSS'`                                                              | Title for CSS tab. |
 |`jsTitle`                | String                  | `'JS'`                                                               | Title for JS tab. |

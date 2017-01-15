@@ -153,6 +153,7 @@
         setupLoading(cody, o);
         var tabsNamesAll = ['html', 'css', 'js', 'result'];
         var tabsNames = splitStr(o.tabs);
+        if (resultAlwaysVisible && o.selected === 'result') o.selected = tabsNames[0];
         var tabItems = {}, name, el, code, item;
 
         function insert() {
