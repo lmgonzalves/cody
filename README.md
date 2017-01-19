@@ -4,6 +4,8 @@ A library to embed demos for front-end developers. It has no dependencies and it
 
 [**DEMO**](http://lmgonzalves.github.io/cody/)
 
+[**TUTORIAL**](https://scotch.io/tutorials/how-to-customize-embedded-demos-with-cody-js)
+
 ## Install
 
 You can install Cody using `npm` or just downloading it manually.
